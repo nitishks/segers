@@ -1,0 +1,164 @@
+@charset "utf-8";
+/* CSS Document */
+<style type="text/css">
+body,td,th {
+	font-family: Cambria;
+	font-size: 16px;
+	color: #57473d;
+	font-weight: normal;
+}
+body {
+	background-image: url(../afbeeldingen/achtergrond.jpg);
+	width: auto;
+	height: 100%;
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	z-index: -1;
+	background-position: center;
+}
+.tekst {
+	background-color: #FFF;
+	padding: 10px;
+	height: 480px;
+	width: 800px;
+	table-layout: fixed;
+	position: static;
+	font-family: Cambria;
+	font-size: 16px;
+	color: #57473d;
+}
+.project {
+	vertical-align: text-top;
+}
+#menu_link a {
+	font-size: 18px;
+	color: #57473d;
+	text-decoration: none;
+}
+#menu_link a:link {
+	text-decoration: none;
+	font-size: 18px;
+}
+#menu_link a:visited {
+	color: #57473d;
+	text-decoration: none;
+	font-size: 18px;
+}
+#menu_link a:hover {
+	color: #57473d;
+	text-decoration: none;
+	font-size: 18px;
+}
+#menu_link a:active {
+	color: #57473d;
+	font-size: 18px;
+	text-decoration: none;
+}
+#tekst_link a {
+	font-size: 16px;
+	color: #57473d;
+	text-decoration: underline;
+}
+#tekst_link a:link {
+	text-decoration: underline;
+	font-size: 16px;
+}
+#tekst_link a:visited {
+	color: #57473d;
+	text-decoration: underline;
+	font-size: 16px;
+}
+#tekst_link a:hover {
+	color: #57473d;
+	text-decoration: underline;
+	font-size: 16px;
+}
+#tekst_link a:active {
+	color: #57473d;
+	font-size: 16px;
+	text-decoration: underline;
+}
+#disclaimer_link a {
+	font-size: 10px;
+	color: #57473d;
+	text-decoration: none;
+}
+#disclaimer_link a:link {
+	text-decoration: none;
+	font-size: 10px;
+}
+#disclaimer_link a:visited {
+	color: #57473d;
+	text-decoration: none;
+	font-size: 10px;
+}
+#disclaimer_link a:hover {
+	color: #57473d;
+	text-decoration: none;
+	font-size: 10px;
+}
+#dislcaimer_link a:active {
+	color: #57473d;
+	font-size: 10px;
+	text-decoration: none;
+}
+h1 {
+	font-size: 24px;
+	color: #57473d;
+	text-align: center;
+}
+h2 {
+	font-size: 20px;
+	color: #57473d;
+}
+.vet {
+	font-family: Cambria;
+	font-size: 16px;
+	font-weight: bold;
+	color: #57473d;
+}
+
+h3 {
+	font-size: 18px;
+	color: #57473d;
+}
+h4 {
+	font-size: 16px;
+	color: #57473d;
+}
+.menubalk {
+	font-family: Cambria;
+	font-size: 18px;
+	font-style: normal;
+	line-height: normal;
+	font-weight: normal;
+	font-variant: normal;
+	color: #57473d;
+	background-color: #b0d136;
+	vertical-align: text-top;
+	white-space: normal;
+	height: 600px;
+	width: 200px;
+	padding: 10px;
+	position: static;
+}
+.header {
+	background-color: #FFF;
+	padding: 10px;
+	width: 800px;
+	height: 100px;
+	background-position: left;
+	position: static;
+}
+.disclaimer {
+	font-family: Cambria;
+	font-size: 10px;
+	background-color: #FFF;
+	height: 20px;
+	width: 800px;
+	padding: 10px;
+	color: #57473d;
+	text-align: center;
+	position: static;
+}
+</style>
