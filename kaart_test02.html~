@@ -7,17 +7,16 @@
         height: 300px;
       }
     </style>
-
     <script src="https://maps.googleapis.com/maps/api/js?sensor=false&language=nl&&region=BE"></script>
     <script>
       function initialize() {
         var map_canvas = document.getElementById('map_canvas');
         var map_options = {
           center: new google.maps.LatLng(50.7958, 2.750466),
-          zoom: 17,
+          zoom: 12,
 		  streetViewControl: false,
-		  mapTypeControl: true,
-          mapTypeId: google.maps.MapTypeId.SATELLITE,
+		  mapTypeControl: false,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
 		  zoomControlOptions: {style: google.maps.ZoomControlStyle.SMALL}
         }
         var map = new google.maps.Map(map_canvas, map_options)
