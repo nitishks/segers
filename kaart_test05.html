@@ -7,7 +7,7 @@
         height: 350px;
       }
     </style>
-    <script src="https://maps.googleapis.com/maps/api/js?sensor=false&language=nl&&region=BE"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false&language=nl"></script>
     <script>
       function initialize() {
         var map_canvas = document.getElementById('map_canvas');
@@ -17,6 +17,8 @@
 		  streetViewControl: false,
 		  mapTypeControl: true,
           mapTypeId: google.maps.MapTypeId.ROADMAP,
+		  maxZoom: 18,
+		  minZoom: 15,
 		  zoomControlOptions: {style: google.maps.ZoomControlStyle.SMALL}
         }
 		
