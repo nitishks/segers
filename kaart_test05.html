@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      #map_canvas {
+        width: 500px;
+        height: 350px;
+      }
+    </style>
+    <script src="https://maps.googleapis.com/maps/api/js?sensor=false&language=nl&&region=BE"></script>
+    <script>
+      function initialize() {
+        var map_canvas = document.getElementById('map_canvas');
+        var map_options = {
+          center: new google.maps.LatLng(50.7958, 2.750466),
+          zoom: 17,
+		  streetViewControl: false,
+		  mapTypeControl: true,
+          mapTypeId: google.maps.MapTypeId.ROADMAP,
+		  zoomControlOptions: {style: google.maps.ZoomControlStyle.SMALL}
+        }
+		
+		
+        var map = new google.maps.Map(map_canvas, map_options)
+		var myCoordinates = [
+new google.maps.LatLng(50.796299,2.750458),
+new google.maps.LatLng(50.796152,2.749975),
+new google.maps.LatLng(50.796131,2.749849),
+new google.maps.LatLng(50.796069,2.749680),
+new google.maps.LatLng(50.795667,2.750310),
+new google.maps.LatLng(50.795480,2.750565),
+new google.maps.LatLng(50.795299,2.750828),
+new google.maps.LatLng(50.795568,2.750693),
+new google.maps.LatLng(50.795730,2.750605),
+new google.maps.LatLng(50.795801,2.750598),
+new google.maps.LatLng(50.795879,2.750663),
+new google.maps.LatLng(50.796081,2.750887)
+];
+var polyOptions = {
+path: myCoordinates,
+strokeColor: "#FF8000",
+strokeOpacity: 0.2,
+strokeWeight: 2,
+fillColor: "#FF8000",
+fillOpacity: 0.2
+}
+var it = new google.maps.Polygon(polyOptions);
+it.setMap(map);
+
+		
+      }
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+  </head>
+  <body>
+    <div id="map_canvas"></div>
+  </body>
+</html>
